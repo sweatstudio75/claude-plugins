@@ -13,7 +13,7 @@ Marketplace de plugins Claude personnelle, utilisable depuis Claude Code et Cowo
 Claude Code :
 
 ```bash
-claude plugin marketplace add <URL https de ce dépôt>.git
+claude plugin marketplace add https://git.jnsfr.com/jnsfr/claude-plugins.git
 claude plugin install adhd-mode@jnsfr
 ```
 
