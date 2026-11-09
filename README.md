@@ -17,15 +17,19 @@ claude plugin marketplace add https://git.jnsfr.com/jnsfr/claude-plugins.git
 claude plugin install adhd-mode@jnsfr
 ```
 
-Cowork : **Customize → Plugins → Add → Add marketplace**, puis l'URL du dépôt.
+Cowork : **Customize → Plugins → Add → Add marketplace**, puis `https://github.com/sweatstudio75/claude-plugins`.
+
+Le dépôt GitHub est un miroir en lecture seule : Cowork ne lit pas le Gitea, qui refuse l'accès anonyme. Un `git push` depuis claude-agent part vers les deux dépôts. Depuis un autre poste, il n'atteint que Gitea.
 
 ## adhd-mode
 
 Le hook `SessionStart` injecte les règles de `skills/adhd-mode/SKILL.md` à chaque début de session, et de nouveau après un `/clear`, une reprise ou une compaction. Il n'y a rien à taper.
 
-- Désactiver pour la session : « stop adhd mode » ou « normal mode ».
+- Désactiver pour la session : « stop adhd mode » (ce mode seulement) ou « normal mode » (tous les modes de sortie, ponytail compris).
 - Réactiver : `/adhd-mode:adhd-mode`.
 - Désactiver durablement : `claude plugin disable adhd-mode@jnsfr`, ou **Disable plugin** dans Cowork.
+
+Avec [ponytail](https://github.com/DietrichGebert/ponytail), les deux modes restent actifs ensemble : ponytail décide quoi construire, adhd-mode décide de la forme de la réponse. Chacun a son interrupteur, « stop adhd mode » ou « stop ponytail ».
 
 Différences avec l'original :
 
