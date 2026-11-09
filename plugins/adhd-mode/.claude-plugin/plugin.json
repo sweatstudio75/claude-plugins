@@ -1,0 +1,10 @@
+{
+  "name": "adhd-mode",
+  "version": "0.1.0",
+  "description": "ADHD-friendly output, on by default: next action first, numbered steps, one concrete next step, tangents cut except one-line ⚠️ risks. Adapted from ayghri/i-have-adhd.",
+  "author": {
+    "name": "Jonas Fouré"
+  },
+  "license": "MIT",
+  "keywords": ["adhd", "output-style", "productivity"]
+}

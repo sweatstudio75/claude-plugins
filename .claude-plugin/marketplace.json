@@ -1,0 +1,16 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "jnsfr",
+  "description": "Plugins Claude personnels de Jonas Fouré, partagés entre Claude Code et Cowork.",
+  "owner": {
+    "name": "Jonas Fouré"
+  },
+  "plugins": [
+    {
+      "name": "adhd-mode",
+      "source": "./plugins/adhd-mode",
+      "description": "ADHD-friendly output, on by default. Adapted from ayghri/i-have-adhd.",
+      "category": "productivity"
+    }
+  ]
+}
