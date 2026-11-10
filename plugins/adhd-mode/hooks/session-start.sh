@@ -8,6 +8,6 @@
 skill="$(dirname -- "$0")/../skills/adhd-mode/SKILL.md"
 [ -f "$skill" ] || exit 0
 
-printf '%s\n\n' 'ADHD MODE ACTIVE (adhd-mode plugin, on by default). The rules below apply to every response. "stop adhd mode" turns off this mode only; "normal mode" turns off every output mode, this one included. If the reader already turned ADHD mode off earlier in this session, stay off until they run /adhd-mode:adhd-mode.'
+printf '%s\n%s\n\n' 'ADHD MODE ACTIVE #k7q2 (adhd-mode plugin, on by default)' 'The rules below apply to every response. "stop adhd mode" turns off this mode only; "normal mode" turns off every output mode, this one included. If the reader already turned ADHD mode off earlier in this session, stay off until they run /adhd-mode:adhd-mode.'
 # Strip the leading YAML frontmatter block only; later "---" lines are kept.
 awk 'NR == 1 && /^---[[:space:]]*$/ { fm = 1; next } fm && /^---[[:space:]]*$/ { fm = 0; next } !fm' "$skill" || exit 0

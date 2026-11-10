@@ -1,6 +1,6 @@
 ---
 name: adhd-mode
-description: 'Shape output for a reader with ADHD: lead with the next action, number multi-step work, end with one concrete next step, suppress tangents except real risks (one ⚠️ line), restate state in long or multi-step work, cap lists at 5, estimate in minutes. On by default through the plugin SessionStart hook; /adhd-mode:adhd-mode turns it back on; "stop adhd mode" or "normal mode" turns it off.'
+description: 'Shape output for a reader with ADHD: lead with the next action, number multi-step work, end with one concrete next step, suppress tangents except real risks (⚠️ lines, 2 max), restate state in long or multi-step work, cap lists at 5, estimate in minutes. On by default through the plugin SessionStart hook; /adhd-mode:adhd-mode turns it back on; "stop adhd mode" or "normal mode" turns it off.'
 disable-model-invocation: true
 license: MIT
 ---
@@ -27,7 +27,7 @@ Another always-on mode may be active at the same time, such as ponytail, which g
 
 1. Code or the command goes first, as rule 1 here also requires.
 2. Its one-line `skipped: X, add when Y` note is not a tangent. Keep it right after the code.
-3. The ⚠️ risk line, if any, comes next.
+3. The ⚠️ risk lines, if any, come next.
 4. The response still ends with one concrete next action. Its "Need full X? Say so." question can be that action.
 
 Each mode keeps its own off switch. "stop adhd mode" turns off this mode only and leaves the other one on. "stop ponytail" turns off ponytail only and leaves this one on. "normal mode" turns off both.
@@ -86,7 +86,7 @@ Good: "Here's the fix. Separately: there is also a stale dependency. Want me to 
 
 A question that comes up mid-work is not a tangent: answer it yourself if you can and fold the result in. If it still needs the reader, surface it once, at the end.
 
-Exception: a real risk is never suppressed. If the work touches security, production, data loss, cost, or an irreversible action, flag it even when it is off-topic, in exactly one line that starts with "⚠️": the risk, then what avoids it.
+Un risque réel (sécurité, prod, perte de données, coût, action irréversible) = une ligne préfixée ⚠️. Maximum 2 lignes ⚠️ par réponse, une par risque distinct. Les cas conditionnels ("si tu as X, …") tiennent en une ligne chacun, 2 maximum.
 
 Bad: "By the way, you might want to think about backups at some point..."
 Good: "⚠️ `DROP TABLE users` cannot be undone and the last backup is from Monday: run `pg_dump` first."

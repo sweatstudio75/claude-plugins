@@ -9,6 +9,7 @@
     {
       "name": "adhd-mode",
       "source": "./plugins/adhd-mode",
+      "version": "0.3.0",
       "description": "ADHD-friendly output, on by default. Adapted from ayghri/i-have-adhd.",
       "category": "productivity"
     }

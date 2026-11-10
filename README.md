@@ -33,7 +33,7 @@ Avec [ponytail](https://github.com/DietrichGebert/ponytail), les deux modes rest
 
 Différences avec l'original :
 
-1. Les digressions restent supprimées, sauf un risque réel (sécurité, production, perte de données, coût, action irréversible). Il est signalé en une seule ligne qui commence par « ⚠️ ».
+1. Les digressions restent supprimées, sauf un risque réel (sécurité, production, perte de données, coût, action irréversible). Chaque risque distinct tient sur une ligne qui commence par « ⚠️ », 2 lignes au maximum par réponse.
 2. L'état n'est rappelé que dans un travail en plusieurs étapes ou sur plusieurs tours, pas dans un échange court.
 3. Les estimations de temps sont données en minutes.
 4. Les règles s'appliquent quelle que soit la langue de la conversation.
